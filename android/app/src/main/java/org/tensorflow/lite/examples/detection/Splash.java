@@ -7,7 +7,7 @@ import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.TextView;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,7 +17,6 @@ import androidx.appcompat.app.AppCompatActivity;
  */
 public class Splash extends AppCompatActivity {
     private ImageView iv;
-    TextView tv;
     Animation a,a2;
     public Window window;
     @Override
@@ -29,11 +28,11 @@ public class Splash extends AppCompatActivity {
             window = this.getWindow();
             window.setStatusBarColor(this.getResources().getColor(R.color.nav));
         }
-        tv = findViewById(R.id.text);
-        iv = findViewById(R.id.fullscreen_content);
+
+        iv = findViewById(R.id.imageView);
         a = AnimationUtils.loadAnimation(this,R.anim.myalpha);
         iv.startAnimation(a);
-        tv.startAnimation(a);
+
 
 
         Thread t = new Thread(){
