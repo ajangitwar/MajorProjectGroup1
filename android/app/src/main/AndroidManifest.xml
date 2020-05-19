@@ -10,7 +10,7 @@
 
     <application
         android:allowBackup="false"
-        android:icon="@drawable/tropfen"
+        android:icon="@drawable/logoicon"
         android:label="AI Vision"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
